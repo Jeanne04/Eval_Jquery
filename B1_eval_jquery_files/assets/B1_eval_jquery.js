@@ -59,6 +59,7 @@ function jumbotron(){
         $('a').empty('href');
         $('ul').addClass('.list-group');
         $('li').addClass('.list-group-item');
+        $('ul').next('i')
     })
 }
 
