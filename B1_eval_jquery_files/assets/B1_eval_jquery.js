@@ -37,6 +37,14 @@ function circle(){
     })
 }
 
+// Pour faire un carré
+function square(){
+    $(`#shapeSquare`).on(`click`, function(){
+        $(`.fa-square`).css({'widht' : '40px', 
+        'height' : '40px'})
+    })
+}
+
 $(function(){
 
 
