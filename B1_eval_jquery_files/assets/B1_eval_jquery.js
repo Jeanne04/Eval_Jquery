@@ -1,3 +1,4 @@
+// Première Partie
 function experiment(){
     // au click sur le bouton :
     $(`#toggleRedSquare`).on(`click`, function(){
@@ -11,6 +12,10 @@ function experiment(){
         // Permuter les deux classes
         $(`.btn-light`).toggleClass(`.btn-primary`)
 
+        expand();
+        down();
+        circle();
+        square();
     })
 }
 
@@ -33,6 +38,7 @@ function down(){
 // Pour former un cercle
 function circle(){
     $(`#shapeCircle`).on(`click`, function(){
+        console.log('#shapeCircle');
         $(`.fa-square`).css('border-radius', '50px')
     })
 }
@@ -45,14 +51,24 @@ function square(){
     })
 }
 
+// Deuxième Partie
+
+function jumbotron(){
+
+    $('.jumbotron').on('click', function(){
+        $('a').empty('href');
+        $('ul').addClass('.list-group');
+        $('li').addClass('.list-group-item');
+    })
+}
+
+
 $(function(){
 
 
     experiment() 
-    expand()
-    down()
-    circle()
 
+    jumbotron()
 
 
 
