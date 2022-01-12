@@ -14,16 +14,36 @@ function experiment(){
     })
 }
 
+// Pour agrandir l'élément square
 function expand(){
         $(`#scaleUp`).on(`click`, function(){
-            $(`.fa-square`).css('widht', '+=20px', 'height', '-=20px')
+            $(`.fa-square`).css({ 'widht' : '+=20px', 
+            'height' : '+=20px'})
+    })
+}
+
+// Pour rétrécir l'élément square
+function down(){
+    $(`#scaleDown`).on(`click`, function(){
+        $(`.fa-square`).css({'widht' : '-=20px', 
+        'height' : '-=20px'})
+    })
+}
+
+// Pour former un cercle
+function circle(){
+    $(`#shapeCircle`).on(`click`, function(){
+        $(`.fa-square`).css('border-radius', '50px')
     })
 }
 
 $(function(){
 
+
     experiment() 
     expand()
+    down()
+    circle()
 
 
 
