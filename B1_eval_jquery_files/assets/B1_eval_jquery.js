@@ -5,7 +5,7 @@ function experiment(){
         $(`.redsquare-app`).toggleClass(`is-active`)
 
         // // Pour ajouter et supprimer l'attribut disabled
-        $(`.redsquare-controls`).attr(`.disabled`).removeAttr(`disabled`)
+        $(`.redsquare-controls`).removeattr(`disabled`)
 
         // Permuter les deux classes
         $(`.btn-light`).toggleClass(`.btn-primary`)
